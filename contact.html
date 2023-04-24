@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - JSA</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <a href="index.html"><img src="images/jsa_logo.png" alt="JSA" class="logo"></a>
+    <div id="navArea">
+      <nav>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="members.html">Members</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="toggle-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div id="mask"></div>
+    </div>
+    <div class="tablet-nav">
+      <nav class="tablet">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="members.html">Members</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="contact">
+      <h1 class="center page-title">Contact</h1>
+      <form id="contact-form" method="post">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone</label>
+        <input type="tel" name="phone" id="phone">
+
+        <label for="classification">Classification</label>
+        <div class="custom-select">
+          <select name="classification" id="classification">
+            <option value="freshman">Freshman</option>
+            <option value="sophmore">Sophmore</option>
+            <option value="junior">Junior</option>
+            <option value="senior">Senior</option>
+            <option value="faculty">Faculty</option>
+            <option value="member">JSA member</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <label for="subscribe">Subscribe Email</label>
+        <div class="undo">
+          <input type="radio" name="subscribe" value="Subscribe" id="subscribe">
+          <label for="subscribe" class="subsc">Subscribe JSA email</label><br>
+          <input type="radio" name="subscribe" value="Unsubscribe" id="unsubscribe">
+          <label for="unsubscribe" class="subsc">Unsubscribe JSA email</label><br>
+          <input type="radio" name="subscribe" value="Other" id="other" checked>
+          <label for="other" class="subsc">Other</label>
+        </div>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit" id="submit-button">Send</button>
+        <p class="center caution">*This send button takes you to your email app, so do not forgett to click on 'SEND'!!
+        </p>
+        <button type="reset">Reset</button>
+      </form>
+    </div>
+
+    <!-- Memu -->
+    <div class="bottom">
+      <h1 class="center"><a href="recipes.html">Recipes</a></h1>
+      <h2 class="bottom-menu"><a href="recipes.html#ltn">Light the Night</a></h2>
+      <ul>
+        <li><a href="onigiri.html">Onigiri</a></li>
+        <li><a href="okonomiyaki.html">Okonomi-yaki</a></li>
+        <li><a href="teriyaki.html">Teriyaki Chicken</a></li>
+        <li><a href="taiyaki.html">Tai-yaki</a></li>
+      </ul>
+    </div>
+  </main>
+  <footer>
+    <a href="https://www.instagram.com/atujsa/" target="_blank"><img src="images/instagram.png" alt="Instagram: @atujsa" class="insta"></a>
+    <p class="center">Copyright &copy; All rights reserved.</p>
+    <p class="center">2023 Japanese Student Association</p>
+  </footer>
+  <script src="main.js"></script>
+  <script src="contact.js"></script>
+</body>
+
+</html>

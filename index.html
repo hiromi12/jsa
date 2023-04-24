@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JSA</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <a href="index.html"><img src="images/jsa_logo.png" alt="JSA" class="logo"></a>
+    <div id="navArea">
+      <nav>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="members.html">Members</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="toggle-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div id="mask"></div>
+    </div>
+    <div class="tablet-nav">
+      <nav class="tablet">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="members.html">Members</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1 class="center mob-h1">Welcome to<br>Japanese Student Association<br>at Arkansas Tech University!</h1>
+    <!-- Slide show -->
+    <!-- visible area -->
+    <div id="area">
+      <!-- slide containts -->
+      <div class="slide-show" id="images">
+        <img src="slide-show/jsa_members.jpg" alt="Phone taken in the Light the Night">
+        <img src="slide-show/s1.jpg" alt="">
+        <img src="slide-show/s2.jpg" alt="">
+        <img src="slide-show/s3.jpg" alt="">
+        <img src="slide-show/s4.jpg" alt="">
+        <img src="slide-show/s5.jpg" alt="">
+        <img src="slide-show/s6.jpg" alt="">
+        <img src="slide-show/s7.jpg" alt="">
+        <img src="slide-show/s8.jpg" alt="">
+        <img src="slide-show/s9.jpg" alt="">
+      </div>
+      <div id="btnarea">
+        <img src="images/arrow.svg" onclick="before()" alt="<" class="arrow rotate">
+        <img src="images/arrow.svg" onclick="next()" alt=">" class="arrow">
+      </div>
+    </div>
+
+    <!-- About Us -->
+    <h2 class="center">About Us</h2>
+    <p class="description">The Japanese Student Association (JSA) is a community of Japanese students at ATU and all
+      students who share an interest in Japanese culture. The JSA provides a platform for students to connect, share
+      their experiences, and engage in various cultural activities such as language exchange activities, traditional
+      events, and Japan Night. The association aims to promote cross-cultural understanding and create a welcoming
+      environment for Japanese students while introducing Japanese culture to the wider student community. Through its
+      activities and events, JSA hopes to build lasting connections and foster a sense of community among its members.
+    </p>
+    <h2 class="center">About Japan</h2>
+    <p class="description">Japan is a country located in East Asia, known for its unique blend of ancient traditions and
+      modern technology. It is home to bustling cities like Tokyo, Kyoto, and Osaka, as well as picturesque rural areas
+      with stunning natural scenery.</p>
+    <p class="description">Visitors to Japan can experience a wide range of cultural activities, such as tea ceremonies,
+      sumo wrestling, and
+      traditional festivals like the famous cherry blossom festival. Japan is also famous for its delicious cuisine,
+      which includes sushi, ramen, and many other delicious dishes.</p>
+    <p class="description">Whether you're interested in history, technology, or simply soaking up the unique atmosphere
+      of this incredible
+      country, Japan is a destination that will not disappoint.</p>
+
+  </main>
+
+  <footer>
+    <a href="https://www.instagram.com/atujsa/" target="_blank"><img src="images/instagram.png" alt="Instagram: @atujsa"
+        class="insta"></a>
+    <p class="center">Copyright &copy; All rights reserved.</p>
+    <p class="center">2023 Japanese Student Association</p>
+  </footer>
+  <script src="main.js"></script>
+  <script src="slide-show.js"></script>
+  <!-- <script src="test.js"></script> -->
+</body>
+
+</html>
